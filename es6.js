@@ -7,7 +7,7 @@ const pets = [
   const getAge=pet =>{return new Date().getFullYear() - pet.bornOn;}
   
   let petsWithAge = [];
-pets.forEach(pet => {
+pets.map(pet => {
     pet.age = getAge(pet);
     petsWithAge.push(pet);     
 });
